@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nodejs and expressjs</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    {{!--below line came from partials, To call the partials use below syntax--}}
+    {{>header}}
+    {{!--To use dynamic values passed in app.js, use "{{key}}" double curly bracs--}}
+    <h3>{{title}} Made by {{name}}</h3>
+    <form>
+        <input type="text" placeholder="Search..." id="search">
+        <button type="submit" id="btn">Search</button>
+    </form>
+    <br>
+    <h3 id="key"></h3>
+    <h3 id="value"></h3>
+    {{>footer}}
+</body>
+<script src="/js/cjs.js"></script>
+</html>
